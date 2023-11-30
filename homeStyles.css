@@ -1,0 +1,423 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-container {
+        background-color: #d5deef;
+        width: 100%;
+        position: relative;
+        min-height: 100vh;
+        padding: 12px;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    .hero-card {
+        flex-direction: column;
+        background-color: #f0f3fa;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .img-container {
+        height: 40%;
+    }
+
+    .hero-details {
+        height: 60%;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .icons {
+        background-color: #b1c9ef;
+        padding: 10px;
+        border-radius: 16px;
+        cursor: pointer;
+        position: sticky;
+        top: 90%;
+        bottom: 16px;
+        z-index: 1;
+    }
+
+    .add-modal {
+        width: 90%;
+    }
+
+    .modal-contents h2 {
+        font-size: 28px;
+        color: #041024;
+        margin-bottom: 16px;
+    }
+
+    .modal-contents label {
+        font-size: 18px;
+        color: #041024;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    #alertEle {
+        height: 25vh;
+        position: fixed;
+        top: 30%;
+        margin: auto;
+        width: 65%;
+        z-index: 3;
+        padding: 18px;
+        background-color: rgba(242, 73, 73, 0.9);
+        border-radius: 8px;
+    }
+
+    #dialPadModal {
+        min-height: 45vh;
+        position: fixed;
+        top: 40%;
+        margin: auto;
+        /* margin-bottom: 12px; */
+        width: 90%;
+        z-index: 2;
+        padding: 20px;
+        background-color: rgb(214, 223, 240, 0.9);
+        border: 2px solid rgb(41, 80, 137, 0.9);
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    
+
+    .result-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+        margin-bottom: 20px;
+    }
+
+    #heroNumResult {
+        font-size: 18px;
+        height: 20px;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #082552;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 12px;
+        width: 80%;
+        border: 2px solid rgba(48, 53, 63);
+        border-radius: 6px;
+        margin-right: 8px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .main-container {
+        background-color: #d5deef;
+        width: 60%;
+        position: relative;
+        min-height: 100vh;
+        padding: 16px;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    .hero-card {
+        display: flex;
+        background-color: #f0f3fa;
+        height: 130px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .img-container {
+        width: 25%;
+    }
+
+    .hero-details {
+        width: 75%;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .icons {
+        background-color: #b1c9ef;
+        padding: 10px;
+        border-radius: 16px;
+        cursor: pointer;
+        position: sticky;
+        top: 90%;
+        bottom: 16px;
+        z-index: 1;
+
+    }
+
+    .add-modal {
+        width: 60%;
+    }
+
+    .main-heading br{
+        display: none;
+    }
+
+    .modal-contents h2 {
+        font-size: 36px;
+        color: #041024;
+        margin-bottom: 24px;
+    }
+
+    .modal-contents label {
+        font-size: 18px;
+        color: #041024;
+        margin-bottom: 8px;
+    }
+
+    #alertEle {
+        height: 25vh;
+        position: fixed;
+        top: 30%;
+        margin: auto;
+        width: 30%;
+        z-index: 3;
+        padding: 20px;
+        background-color: rgba(242, 73, 73, 0.8);
+        border-radius: 12px;
+    }
+
+    #dialPadModal {
+        min-height: 50vh;
+        position: fixed;
+        top: 40%;
+        margin: auto;
+        margin-bottom: 16px;
+        width: 40%;
+        z-index: 2;
+        padding: 20px;
+        background-color: rgb(214, 223, 240, 0.9);
+        border: 2px solid rgb(41, 80, 137, 0.9);
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .result-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 28px;
+    }
+
+    #heroNumResult {
+        height: 25px;
+        font-size: 22px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #082552;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 16px;
+        width: 80%;
+        border: 2px solid rgba(48, 53, 63);
+        border-radius: 6px;
+        margin-right: 8px;
+    }
+
+    
+}
+
+.add-modal {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    z-index: 2;
+    padding: 20px;
+    background-color: rgba(99, 95, 95, 0.9);
+}
+
+.close-ele {
+    float: right;
+    right: 35px;
+    color: #2e2d2d;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-contents,
+.alert-container {
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container hr {
+    border-color: #94b4ef;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #082552;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.main-heading sub {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+
+.search-icon {
+    float: right;
+}
+
+.add-icon {
+    float: left;
+}
+
+.icons:hover {
+    transform: scale(0.9, 0.9);
+}
+
+
+
+.hero-card:hover {
+    box-shadow: 1px 1px #606a70;
+}
+
+
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+.hero-details h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #082552;
+}
+
+.hero-details h3:hover {
+    font-size: 24px;
+    color: #032030;
+}
+
+.hero-details h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #295089;
+}
+
+
+
+.modal-contents input,
+textarea {
+    border: none;
+    border-bottom: 2px solid #041024;
+    padding: 2px;
+    background: transparent;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #041024;
+    margin-bottom: 16px;
+}
+
+.modal-contents input:focus {
+    border: 2px solid #041024;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #b6c6e3;
+    font-size: 15px;
+}
+
+::-ms-input-placeholder {
+    color: #b6c6e3;
+    font-size: 15px;
+}
+
+#addHeroButn {
+    cursor: pointer;
+    background-color: #041024;
+    border: 0;
+    border-radius: 10px;
+    color: #d5deef;
+    padding: 10px 12px;
+    width: 60px;
+}
+
+#addHeroButn:hover {
+    background-color: #d5deef;
+    color: #041024;
+}
+
+.result-container svg:hover {
+    cursor: pointer;
+    transform: scale(0.8, 0.8);
+}
+
+.grid-element {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    margin-bottom: 8px;
+    text-align: center;
+    border-radius: 8px;
+    color: #295089;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.grid-element:hover {
+    background-color: #295089;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nums-grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(161, 189, 241);
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+#dialPadModal span{
+    float: right;
+    right: 25px;
+    color: #2e2d2d;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+} 

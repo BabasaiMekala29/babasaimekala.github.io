@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="projectImages/heroicon.jpg">
+    <link rel="stylesheet" href="homeStyles.css">
+    <title>superhero</title>
+</head>
+
+<body>
+    <ul class="main-container" id="mainContainer">
+        <hr>
+        <li id="mainHeading">
+            <h2 class="main-heading">Superheroes 
+                <br>
+                <sub>inspire, protect, empower</sub> </h2>
+        </li>
+        <hr>
+        <li  style="display: none;" id="errorMesg">
+            <h1 class="main-heading">No Superhero found!!</h1>
+        </li>
+        <li class="hero-card" id="captain america" style="display: inline-flex;">
+            <div class="img-container">
+                <img src="projectImages/captain_america.jpg" alt="Steve Rogers" class="hero-img">
+            </div>
+            <div class="hero-details">
+                <h3>Captain America</h3>
+                <h6>Recipient of the Super Soldier serum, World War II hero Steve Rogers fights for American ideals as
+                    one of the world's mightiest heroes and the leader of the Avengers. He is a highly skilled
+                    hand-to-hand combatant, and is trained in various forms of armed and unarmed combat.</h6>
+            </div>
+        </li>
+        <li class="hero-card" id="iron man" style="display: inline-flex;">
+            <div class="img-container">
+                <img src="projectImages/ironman.jpg" alt="Tony Stark" class="hero-img">
+            </div>
+            <div class="hero-details">
+                <h3>Iron man</h3>
+                <h6>Iron Man is a fictional superhero in American comic books published by Marvel Comics. Iron Man is a
+                    founding member of the superhero team known as the Avengers. Iron Man has no superhuman abilities.
+                    He derives his power from a Powered armour suit. </h6>
+            </div>
+        </li>
+        <li class="hero-card" id="thor" style="display: inline-flex;">
+            <div class="img-container">
+                <img src="projectImages/thor.jpg" alt="Thor Odinson" class="hero-img">
+            </div>
+            <div class="hero-details">
+                <h3>Thor</h3>
+                <h6>Thor Odinson wields the power of the ancient Asgardians to fight evil throughout the Nine Realms and
+                    beyond. He extremely important in Norse mythology as he is the God of Thunder. He was gifted with an
+                    enchanted hammer which can only be lifted by someone who is worthy enough.</h6>
+            </div>
+        </li>
+        <li class="hero-card" id="hulk" style="display: inline-flex;">
+            <div class="img-container">
+                <img src="projectImages/hulk.jpg" alt="Bruce Banner" class="hero-img">
+            </div>
+            <div class="hero-details">
+                <h3>Hulk</h3>
+                <h6>Bruce Banner was a physicist who was exposed to high levels of gamma radiation, transforming him
+                    into the powerhouse brute known as the Hulk. Hulk is one of the six founding members of the
+                    Avengers.</h6>
+            </div>
+        </li>
+        <li class="hero-card" id="batman" style="display: inline-flex;">
+            <div class="img-container">
+                <img src="projectImages/batman.jpg" alt="Bruce Wayne" class="hero-img">
+            </div>
+            <div class="hero-details">
+                <h3>Batman</h3>
+                <h6>Batman is a superhero operating in Gotham City, he serves as its protector,
+                    using the symbol of a bat to strike fear into the hearts of criminals. Unlike other superheroes,
+                    Batman is often depicted to lack any "superpowers", instead using lifelong training and equipment to
+                    fight crime.</h6>
+            </div>
+        </li>
+        <li class="hero-card" id="superman" style="display: inline-flex;">
+            <div class="img-container">
+                <img src="projectImages/superman.jpg" alt="Clarke Kent" class="hero-img">
+            </div>
+            <div class="hero-details">
+                <h3>Superman</h3>
+                <h6>Superman is also called as "The Man of Steel" and "The Last Son of Krypton". He is the one
+                    who saves the world day in, day out. He defends the people against the evil monsters. He is very
+                    strong and fast, he can fly, he has got a freezing breath, super hearing, superman
+                    strength, regeneration etc.</h6>
+            </div>
+        </li>
+        <li class="hero-card" id="wonder woman" style="display: inline-flex;">
+            <div class="img-container">
+                <img src="projectImages/wonder_woman1.jpg" alt="Diana" class="hero-img">
+            </div>
+            <div class="hero-details">
+                <h3>Wonder Woman</h3>
+                <h6>Wonder Woman is an Amazon, a race of female warriors in Greek mythology. For the purpose of the
+                    Wonder Woman character, it was the Greek gods who gave her powers. These powers include
+                    superhuman strength and speed as well as the ability to fly.</h6>
+            </div>
+        </li>
+        <li class="hero-card" id="aquaman" style="display: inline-flex;">
+            <div class="img-container">
+                <img src="projectImages/aquaman.jpg" alt="Aqua Man" class="hero-img">
+            </div>
+            <div class="hero-details">
+                <h3>Aquaman</h3>
+                <h6>Arthur Curry is the King of Atlantis, the firstborn son of Atlanna. He possesses superhuman
+                    strength,
+                    the ability to breathe underwater, and the capacity to communicate telepathically with creatures of
+                    the sea, among other powers.</h6>
+            </div>
+        </li>
+
+
+
+        <li id="addIcon" class="add-icon icons">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+            </svg>
+        </li>
+
+        <li id="searchIcon" class="search-icon icons">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+            </svg>
+        </li>
+
+    </ul>
+    <div style="display: none;" class="add-modal" id="addModal">
+        <span class="close-ele">&times;</span>
+        <div class="modal-contents">
+            <h2>Add Superhero</h2>
+
+            <label for="heroName">Name*</label>
+            <input type="text" id="heroName" placeholder="Enter name">
+
+            <label for="alterEgo">Alter Ego*</label>
+            <input type="text" id="alterEgo" placeholder="Enter alter ego">
+
+            <label for="description">Description</label>
+            <textarea id="description" cols="30" rows="5"></textarea>
+
+            <button id="addHeroButn">Add</button>
+        </div>
+
+    </div>
+    <div id="alertEle" style="display: none;">
+        <span class="close-ele">&times;</span>
+        <div class="alert-container">
+            <h2>
+                Alert <span>&#9888;</span>
+            </h2>
+            <p id="alertMesg"></p>
+        </div>
+
+    </div>
+    <div id="dialPadModal" style="display: none;">
+        <span class="close-ele">&times;</span>
+        <div class="result-container">
+            <h4 id="heroNumResult"></h4>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" id="clear"
+                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M576 128c0-35.3-28.7-64-64-64H205.3c-17 0-33.3 6.7-45.3 18.7L9.4 233.4c-6 6-9.4 14.1-9.4 22.6s3.4 16.6 9.4 22.6L160 429.3c12 12 28.3 18.7 45.3 18.7H512c35.3 0 64-28.7 64-64V128zM271 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+            </svg>
+        </div>
+
+        <div class="nums-grid-container">
+            <div class="grid-element" id="1">1</div>
+            <div class="grid-element" id="2">2<br>abc</div>
+            <div class="grid-element" id="3">3<br>def</div>
+            <div class="grid-element" id="4">4<br>ghi</div>
+            <div class="grid-element" id="5">5<br>jkl</div>
+            <div class="grid-element" id="6">6<br>mno</div>
+            <div class="grid-element" id="7">7<br>pqrs</div>
+            <div class="grid-element" id="8">8<br>tuv</div>
+            <div class="grid-element" id="9">9<br>wxyz</div>
+            <div class="grid-element"></div>
+            <div class="grid-element" id="0">0<br>_</div>
+            <div class="grid-element" id="enter">
+                <br>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="logicCode.js"></script>
+</body>
+
+</html>
