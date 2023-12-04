@@ -106,7 +106,7 @@ function addHero() {
         let heroCardDivEle = document.createElement("li");
         heroCardDivEle.classList.add("hero-card");
         heroCardDivEle.setAttribute("id", heroNameEle.value.toLowerCase());
-        heroCardDivEle.setAttribute("style", "display: inline-flex;");
+        heroCardDivEle.setAttribute("style", "display: flex;");
         mainContainerEle.insertBefore(heroCardDivEle, addIconEle);
 
         let heroImgDivEle = document.createElement("div");
@@ -156,7 +156,7 @@ function searchFunction(heroCodeStr){
     for (let item in superheroObj) {
         let unMatchedHero = document.getElementById(superheroObj[item]);
         if (item.indexOf(heroCodeStr) > -1) {
-            unMatchedHero.style.display = "inline-flex";
+            unMatchedHero.style.display = "flex";
         }
         else{
             unmatchedCount+=1;
@@ -194,7 +194,7 @@ function showDialpadModal() {
     for (let item in superheroObj) {
         
         let unMatchedHero = document.getElementById(superheroObj[item]);
-        if(unMatchedHero.style.display=="none") unMatchedHero.style.display = "inline-flex";
+        if(unMatchedHero.style.display=="none") unMatchedHero.style.display = "flex";
         
     }
     enterEle.addEventListener("click", showResultAfterEnter);
